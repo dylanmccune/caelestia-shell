@@ -88,6 +88,15 @@ Scope {
     }
 
     CustomShortcut {
+        name: "clearClipboard"
+        description: "Clear clipboard history"
+        onPressed: {
+            Clipboard.clear();
+            Toaster.toast(qsTr("Clipboard cleared"), qsTr("All clipboard history has been deleted"), "delete_sweep");
+        }
+    }
+
+    CustomShortcut {
         name: "launcherInterrupt"
         description: "Interrupt launcher keybind"
         onPressed: root.launcherInterrupted = true

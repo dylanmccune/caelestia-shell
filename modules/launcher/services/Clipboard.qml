@@ -64,4 +64,10 @@ QtObject {
         Quickshell.execDetached(["sh", "-c", `cliphist decode ${item.id} | wl-copy`]);
         list.visibilities.launcher = false;
     }
+
+    function clear(): void {
+        Quickshell.execDetached(["cliphist", "wipe"]);
+        history = [];
+        console.log("Clipboard history wiped");
+    }
 }
