@@ -35,10 +35,10 @@ This is a fork of the Caelestia Shell for Quickshell with built-in Emoji and Cli
    ```
 
 3. **Configure Hyprland keybinds**:
-   Add these to `~/.config/hypr/hyprland/keybinds.conf`:
+   Add these to `~/.config/hypr/hyprland/keybinds.conf` (or replace relevant lines):
    ```conf
    bind = Super, V, global, caelestia:clipboard
-   bind = Super+Alt, C, global, caelestia:clearClipboard
+   bind = Super, BackSpace, global, caelestia:clearClipboard
    bind = Super, Period, global, caelestia:emoji
    ```
 
